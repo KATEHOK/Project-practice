@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.container {
+#container {
   margin: 0 auto;
   width: 95vw;
   min-height: 100vh;
@@ -17,7 +17,7 @@
           flex-direction: column;
 }
 
-.header {
+#header {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +34,7 @@
   background-color: black;
 }
 
-.main {
+#main {
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -44,9 +44,17 @@
   padding: 32px 64px;
 }
 
-.footer {
+#footer {
   width: 100%;
-  background-color: #d3964b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 32px 64px;
@@ -106,6 +114,26 @@
   -webkit-transform: none;
           transform: none;
   color: white;
+}
+
+.footer-item {
+  color: gray;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: gray;
+  text-decoration: none;
+  -webkit-transition: color 150ms ease-out;
+  transition: color 150ms ease-out;
+}
+
+.footer-link:hover {
+  color: wheat;
+}
+
+.footer-link:active {
+  color: gray;
 }
 
 .checked {
