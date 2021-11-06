@@ -25,7 +25,7 @@
         </header>
 
         <main id="main">
-            <details class="order">
+            <details class="order" id="order-777">
                 <summary class="order-preview">
                     <div class="order-doc">
                         <span class="order-number txt">Order №777</span>
@@ -35,10 +35,11 @@
                     <h3 class="order-heading txt">Software</h3>
                 </summary>
 
-                <section class="order-content">
+                <form action="./server/download.php" method="post" class="order-content">
+                    <input type="hidden" name="filename" value="virus.txt">
                     <p class="order-txt txt">Download and install a new version of the company's software.</p>
-                    <a href="./server/download.php" class="order-button txt">Download</a>
-                </section>
+                    <input type="submit" value="Download" class="order-button txt">
+                </form>
             </details>
         </main>
 

@@ -1,6 +1,5 @@
 <?php
-$file = '../data/virus.txt';
-
+$file = '../data/' . $_POST['filename'];
 if (file_exists($file)) {
     if (ob_get_level()) {
         ob_end_clean();
