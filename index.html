@@ -13,18 +13,34 @@
 <body>
     <div id="container">
         <header id="header">
-            <img id="logo" src="./img/" alt="logo">
+            <img id="logo" src="./img/logo.jpg" alt="logo">
             <h1 id="heading" class="txt">Corporation</h1>
             <nav id="navigation">
                 <a href="#" class="nav-item txt">Home</a>
                 <a href="#" class="nav-item txt">News</a>
-                <a href="#" class="nav-item txt">Orders</a>
-                <a href="#" class="nav-item txt">Post</a>
-                <a href="#" class="nav-item txt checked">Login</a>
+                <a href="#" class="nav-item txt checked">Orders</a>
+                <a href="#" class="nav-item txt">Email</a>
+                <a href="#" class="nav-item txt">Logout</a>
             </nav>
         </header>
 
-        <main id="main"></main>
+        <main id="main">
+            <details class="order">
+                <summary class="order-preview">
+                    <div class="order-doc">
+                        <span class="order-number txt">Order №777</span>
+                        <time class="order-datetime txt" datetime="2021-10-06 14:00">6 november 14:00</time>
+                    </div>
+
+                    <h3 class="order-heading txt">Software</h3>
+                </summary>
+
+                <section class="order-content">
+                    <p class="order-txt txt">Download and install a new version of the company's software.</p>
+                    <a href="#" class="order-button txt">Download</a>
+                </section>
+            </details>
+        </main>
 
         <footer id="footer">
             <span class="txt footer-item">Corporation &copy; All right reserved 2021</span>

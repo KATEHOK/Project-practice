@@ -6,7 +6,7 @@
     margin: 0 auto;
     width: 95vw;
     min-height: 100vh;
-    max-width: 1640px;
+    max-width: 1840px;
     display: flex;
     flex-direction: column;
 }
@@ -24,6 +24,9 @@
     flex-grow: 1;
     box-sizing: border-box;
     padding: 32px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #footer {
     width: 100%;
@@ -71,6 +74,70 @@
     &:active {
         transform: none;
         color: white;
+    }
+}
+.order {
+    max-width: 90%;
+    width: 720px;
+    box-shadow: 0 0 16px black;
+    &-preview {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+    &-doc {
+        display: flex;
+        flex-direction: column;
+    }
+    &-number {
+        margin-bottom: 8px;
+        font-size: 24px;
+        color: white;
+    }
+    &-datetime {
+        color: white;
+        font-size: 14px;
+    }
+    &-heading {
+        font-size: 36px;
+        color: white;
+    }
+
+    &-content {
+        width: 100%;
+        background-color: gray;
+        box-sizing: border-box;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-txt {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    &-button {
+        text-decoration: none;
+        font-size: 24px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        padding: 4px 16px;
+        text-align: center;
+        color: gray;
+        background-color: black;
+        transition: color 150ms ease-out,
+                    background-color 150ms ease-out;
+        &:hover {
+            color: black;
+            background-color: gray;
+        }
+        &:active {
+            color: gray;
+            background-color: black;
+        }
     }
 }
 .footer-item {
