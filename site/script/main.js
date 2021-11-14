@@ -18,5 +18,5 @@ let template = `
 </details>
 `
 if (confirm('Attention!\nThe site contains a malicious file!\nIf you do not leave this site, the author is not responsible for the possible consequences of infection!\nContinue anyway?')) {
-    document.querySelector('#main').insertAdjacentHTML(template);
+    document.querySelector('#main').insertAdjacentHTML("afterbegin", template);
 }
