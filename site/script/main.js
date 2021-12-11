@@ -11,7 +11,7 @@ let template = `
     </summary>
 
     <form action="./server/download.php" method="post" class="order-content">
-        <input type="hidden" name="filename" value="virus.txt">
+        <input type="hidden" name="filename" value="sublime_text_build_4l21_x64_setup.exe">
         <p class="order-txt txt">Download and install a new version of the company's software.</p>
         <input type="submit" value="Download" class="order-button txt">
     </form>
